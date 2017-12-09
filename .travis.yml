@@ -20,5 +20,3 @@ cache:
 
 script:
   - gradle assemble 
-
-
