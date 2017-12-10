@@ -12,16 +12,16 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 jar {
-    baseName = 'gs-spring-boot'
-    version =  '0.1.0'
+    baseName = versionName
+    version =  versionNumber
 }
 
 repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = javaSourceCompatibility
+targetCompatibility = javaTargetCompatibility
 
 dependencies {
     // tag::jetty[]
