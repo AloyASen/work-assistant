@@ -7,7 +7,17 @@ import com.google.gson.Gson;
  * 
  */
 public class GsonExample {
-	public static void main(String[] args) {
+	public String GsonExampleJSON(){
+		Gson gson = new Gson();
+		ModelObject modelObject = new ModelObject("myname", 12, true, 2.3);
+		String json = gson.toJson(modelObject);
+		return json;
+	}
+/*
+this code has to be removed from the release versions for the stable bild check
+*/
+
+	/*public static void main(String[] args) {
 
 		final Gson gson = new Gson();
 		// original object instantiation
@@ -24,5 +34,5 @@ public class GsonExample {
 		// converting json to object
 		ModelObject modelObject1 = gson.fromJson(json, ModelObject.class);
 		System.out.println("Converted Java object : " + modelObject1);
-	}
+	}*/
 }
