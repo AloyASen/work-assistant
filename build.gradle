@@ -1,23 +1,9 @@
 // START SNIPPET configuration-injection
-subprojects {
-    apply plugin: 'java'
+ext {
 
-    repositories {
-       mavenCentral()
-    }
-
-
-    version = '0.0.1'
-/* 
-
-	the first portion stands for a major release version << documented >>
-	the second zero stands for a pre-alpha release subversion <may be documented>
-	the the third field stands for beta developmental edition <undocumented but essential comments are included>
-*/
-
- 
-    jar {
-        manifest.attributes provider: 'gradle'
-    }
+    versionName = 'work-assistant-pro'
+    versionNumber = '0.0.1'
+    javaSourceCompatibility = JavaVersion.VERSION_1_8
+    javaTargetCompatibility = JavaVersion.VERSION_1_8
 }
 // END SNIPPET configuration-injection
