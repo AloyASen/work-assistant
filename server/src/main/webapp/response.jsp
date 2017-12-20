@@ -5,6 +5,5 @@
     </head>
     <body>
         <h2>Hello, ${user}!</h2>
-        <code> ${json} </code>
     </body>
 </html>
