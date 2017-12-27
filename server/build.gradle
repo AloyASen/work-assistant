@@ -9,7 +9,6 @@ buildscript {
 
   dependencies {
     classpath 'org.akhikhl.gretty:gretty:+'
-    classpath ''
   }
 }
 plugins {
@@ -17,7 +16,7 @@ plugins {
     id 'war' 
 }
 apply plugin: 'org.akhikhl.gretty'
-apply plugin: 'idea'
+
 
 repositories {
   jcenter()

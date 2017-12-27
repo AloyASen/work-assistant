@@ -13,7 +13,7 @@ RUN apt-get install -y git openjdk-8-jdk
 
 # clone the github repo
 RUN git clone --recursive https://github.com/AloyASen/work-assistant.git
-WORKDIR susi_server
+WORKDIR work-assistant
 RUN git submodule update --init --recursive
 
 # compile
