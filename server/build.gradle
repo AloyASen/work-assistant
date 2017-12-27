@@ -9,6 +9,7 @@ buildscript {
 
   dependencies {
     classpath 'org.akhikhl.gretty:gretty:+'
+    classpath ''
   }
 }
 plugins {
@@ -16,6 +17,7 @@ plugins {
     id 'war' 
 }
 apply plugin: 'org.akhikhl.gretty'
+apply plugin: 'idea'
 
 repositories {
   jcenter()
@@ -31,8 +33,7 @@ dependencies {
     testCompile 'org.mockito:mockito-core:2.7.19'
     testCompile 'io.github.bonigarcia:webdrivermanager:1.6.1' 
     testCompile 'org.seleniumhq.selenium:selenium-java:3.3.1'
-    //this is for json parsing 
-    compile 'com.google.code.gson:gson:2.8.2'
+   
 
       // Jersey server
   compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.22.1'
@@ -40,6 +41,8 @@ dependencies {
   // Jackson for Json transformations
   compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.22.1'
 
+  // https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver
+  compile group: 'org.mongodb', name: 'mongo-java-driver', version: '1.3'
 
 
 }
