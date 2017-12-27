@@ -4,7 +4,7 @@ buildscript {
   repositories {
     jcenter()
     // enable this to use snapshot versions of Gretty:
-    // maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
   }
 
   dependencies {
@@ -15,13 +15,13 @@ plugins {
     id 'java'
     id 'war' 
 }
-apply plugin: 'org.akhikhl.gretty'
+apply plugin: 'org.akhikhl.gretty' 
 
 
 repositories {
   jcenter()
   // enable this to use snapshot versions of Gretty:
-  // maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+   maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
 }
 gretty {
     integrationTestTask = 'test'  
